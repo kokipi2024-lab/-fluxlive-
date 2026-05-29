@@ -1,0 +1,14 @@
+import './globals.css'
+
+export const metadata = {
+  title: 'Fluxlive — Stream the Moment',
+  description: 'Premium creator livestreaming for Africa and global youth culture',
+}
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  )
+}
