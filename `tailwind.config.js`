@@ -1,0 +1,19 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'matte-black': '#0A0A0A',
+        'electric-purple': '#8B5CF6',
+        'cyan-glow': '#06B6D4',
+        'gradient-pink': '#EC4899',
+      },
+    },
+  },
+  plugins: [],
+}
