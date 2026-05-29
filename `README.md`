@@ -1,0 +1,23 @@
+# Fluxlive — Stream the Moment
+
+Premium creator livestreaming for Africa and global youth culture.
+
+## Tech Stack
+
+- **Frontend**: Next.js + Tailwind CSS
+- **Backend**: Supabase (PostgreSQL + Auth + Realtime)
+- **Streaming**: LiveKit (coming soon)
+- **Hosting**: Vercel (free)
+
+## Features (MVP)
+
+- ✅ User authentication (email signup/login)
+- ✅ Dark neon UI with glassmorphism
+- ✅ Landing page with Call-to-Action
+- ✅ Database tables: users, streams, follows, messages, gifts, subscriptions
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
