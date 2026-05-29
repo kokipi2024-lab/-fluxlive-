@@ -1,8 +1,21 @@
-import { supabase } from '../lib/supabase'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-white">
+      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link href="/" className="text-2xl font-bold">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500">
+            Fluxlive
+          </span>
+        </Link>
+        <Link
+          href="/login"
+          className="px-6 py-2 border border-purple-600 hover:bg-purple-600/20 rounded-full transition"
+        >
+          Login
+        </Link>
+      </nav>
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-5xl font-bold text-center mb-8">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -13,10 +26,10 @@ export default function Home() {
           Stream the Moment.
         </p>
         <div className="flex justify-center gap-4">
-          <button className="px-8 py-3 bg-purple-600 hover:bg-purple-700 rounded-full font-semibold transition">
+          <button className="px-8 py-3 bg-purple-600 hover:bg-purple-700 rounded-full font-semibold transition neon-purple">
             Go Live
           </button>
-          <button className="px-8 py-3 border border-purple-600 hover:bg-purple-600/20 rounded-full font-semibold transition">
+          <button className="px-8 py-3 border border-cyan-500 hover:bg-cyan-500/20 rounded-full font-semibold transition neon-cyan">
             Explore
           </button>
         </div>
